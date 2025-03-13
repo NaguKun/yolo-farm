@@ -1,7 +1,8 @@
 import numpy as np
 from keras.callbacks import ReduceLROnPlateau, CSVLogger, EarlyStopping, ModelCheckpoint
 from data_processing import load_data, augment_data
-from alexnet import alexnet  # Hoặc từ model_lenet import le_net
+from alexnet import alexnet  
+from lenet import lenet
 
 # Load dataset
 train_images, train_labels = load_data('train_images_alexnet.npy', 'train_labels_alexnet.npy')
